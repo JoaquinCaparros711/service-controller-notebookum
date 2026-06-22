@@ -1,14 +1,7 @@
-# Service Controller NotebookUm
+# Deprecated: Service Controller NotebookUm (Python Version)
 
-Este microservicio actúa como **Controlador de Llamadas** (API Gateway / Orquestador) para el sistema NotebookUm.
+⚠️ **ESTE COMPONENTE HA SIDO DEPRECADO Y REEMPLAZADO.**
 
-## Responsabilidades
-- Recibe las peticiones HTTP externas.
-- Delega el trabajo a los otros microservicios (Extractor, IA, Persistencia, Usuario).
-- Agrupa las respuestas y las devuelve al cliente.
+Toda la funcionalidad del orquestador y API Gateway ha sido migrada por completo al microservicio en Go: **`service-controller-notebookum-go`**.
 
-## Ejecución con Docker
-```bash
-docker-compose up -d --build
-```
-El servicio estará disponible en el puerto `5000` (o a través de Traefik en `controller.universidad.localhost`).
+Este directorio se conserva únicamente como registro histórico de la migración y no debe desplegarse en entornos de producción.
